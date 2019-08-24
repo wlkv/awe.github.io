@@ -1,0 +1,575 @@
+			/* Основная разметка*/
+			body {
+				color: #8B8989;
+				max-width: 1920px;
+				min-width: 320px;
+				height: 100%;
+				margin: 0 auto;
+				font-size: 17px;
+				text-align: center;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				font-family: 'Century Gothic', sans-serif;
+				overflow-x: hidden;
+				cursor: default;
+			}
+			img {
+				max-width: 90%; 
+				min-width: 30%;
+			}
+			h1 {
+				font-family: 'Century Gothic', sans-serif;
+				margin-top: 20px; 
+				font-size: 40px;
+				font-weight: 100;
+			}
+			h2 {
+				font-family: 'Century Gothic', sans-serif;
+				font-weight: 100;
+				font-size: 25px; 
+				margin-top: 50px;
+			}
+			h3 {
+				font-family: 'Century Gothic', sans-serif;
+				font-weight: 100;
+			}
+			a { 
+				text-decoration: none; 
+				color: #808080;
+				transition: 0.3s;
+			}
+			a:hover {
+				color: #C0C0C0;
+			}
+			body table {
+				width: 100%;
+			}
+			footer {
+				position: static;
+				margin-top: 60px;
+				bottom: 0;
+				text-align: center; 
+				font-size: 12px;
+				line-height: 20px;
+			}
+			/***************************************************/
+			.table {
+				position: relative;
+				left: 20px;
+			}
+			.logo{
+				max-width: 50%
+			}
+			.content {
+				margin-top: 30px; 
+				margin-right: 5%; 
+				margin-left: 5%; 
+				font-size: 16px;
+			}
+			.parent {
+				margin-right: 5%;
+				margin-left: 5%;
+			}
+			.hr {
+				margin: 0; 
+				padding: 4px; 
+				overflow: hidden;
+				text-align: center;
+			}
+			.hr li {
+				display: block;
+				padding: 25px;
+				font-size: 17px;
+				float: left;
+			}
+			.hr li:nth-child(4){
+				float: right;
+			}
+			.hr li:first-child{
+				padding: 0px;
+			}
+			/* Подчеркивание ссылок шапки*/
+			.hr a {
+				line-height: 1;
+				display: inline-block;
+				color: #808080;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			.hr a:hover {
+				color: #C0C0C0;
+			}
+			/*************************/
+			/* Анимация увеличения картинок */
+ 			.tran {
+				display: inline-block;
+				position: relative;
+				z-index: 2;
+				margin: 0 auto;
+				overflow: hidden;
+				width: 107px;
+				height: 107px;
+				cursor: pointer;
+				transition: .2s linear;
+			}
+			.tran:hover {
+				transform: scale(1.1);
+			}
+			.tran2 {
+				position: relative;
+				z-index: 2;
+				margin: 0 auto;
+				overflow: hidden;
+				width: 107px;
+				height: 107px;
+				cursor: pointer;
+				transition: 0.2s linear;
+			}
+			.tran2:hover {
+				transform: scale(1.1);
+			}
+			/*************************/
+			/* Страница "Дистрибутивы" */
+			.distr {
+				width: 100%;
+				margin: 15px auto;
+			}
+			.distr-a {
+				text-decoration: none; 
+				color: #63B8FF;
+				transition: 0.2s;
+			}
+			.distr-a:hover {
+				color: #87CEFF;
+			}
+			.distr-a:active {
+				color: white;
+			}
+			/* Карточки дистрибутивов*/
+			.mD {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0,0,0,0.8);
+				z-index: 99999;
+				-webkit-transition: opacity 400ms ease-in;
+				-moz-transition: opacity 400ms ease-in;
+				transition: opacity 400ms ease-in;
+				display: none;
+			}
+			.mD:target {
+				display: block;
+			}
+			.mD > div {
+				width: 89%;
+				height: 85%;
+				bottom: 10px;
+				position: relative;
+				margin: 10% auto;
+				/* padding: 5px 20px 13px 20px;
+				border-radius: 60px;
+				background: #fff; 
+ 				background: -moz-linear-gradient(#fff, #999);
+				background: -webkit-linear-gradient(#fff, #999);
+				background: -o-linear-gradient(#fff, #999); */
+			}
+			.close {
+				color: #FFFFFF;
+				line-height: 25px;
+				position: absolute;
+				right: -12px;
+				text-align: center;
+				top: -10px;
+				width: 24px;
+				text-decoration: none;
+				font-weight: bold;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+				-moz-box-shadow: 1px 1px 3px #000;
+				-webkit-box-shadow: 1px 1px 3px #000;
+				box-shadow: 1px 1px 3px #000;
+			}
+			.close:hover { 
+				color: black;
+				background: #00d9ff; 
+			}
+			.next {
+				color: #FFFFFF;
+				line-height: 250px;
+				position: absolute;
+				right: -24px;
+				text-align: center;
+				top: 100px;
+				width: 48px;
+				text-decoration: none;
+				font-weight: bold;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+				/* -moz-box-shadow: 1px 1px 3px #000;
+				-webkit-box-shadow: 1px 1px 3px #000;
+				box-shadow: 1px 1px 3px #000; */
+			}
+			.next:hover { 
+				color: black;
+				background: #00d9ff; 
+			}
+			.ago {
+				color: #FFFFFF;
+				line-height: 250px;
+				position: absolute;
+				left: -24px;
+				text-align: center;
+				top: 100px;
+				width: 48px;
+				text-decoration: none;
+				font-weight: bold;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+			}
+			.ago:hover { 
+				color: black;
+				background: #00d9ff; 
+			}
+			.mp {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				overflow-x: hidden;
+			}
+			.exam {
+				display: inline-block;
+				position: relative;
+				font-size:10px; 
+				overflow: hidden;
+				overflow-x: hidden;
+				overflow-y: hidden;
+			}
+			.exam img {
+				padding: 0;
+				margin: 0;
+				margin: 0 auto;
+				border-radius: 40px;
+				min-height: 350px;
+				max-height: 350px;
+				min-width: 80%;
+				max-width: 80%;
+				filter: blur(3px);
+			}
+			.exam h1 {
+				font-family: italic;
+			}
+			.exam h2 {
+				position: absolute;
+				left: 10px;
+				right: 10px;
+				top: 120%;
+			}
+			.exam span {
+				position: absolute;
+				left: 70px;
+				right: 70px;
+				color: white;
+				border-radius: 60px;
+			}
+			.exam span a{
+				color: white;
+			}
+			.exam p {
+					font-size: 17px;
+				}
+			/* Стрелка ссылок*/
+			.exam a  {
+				line-height: 0;
+				display: inline-block;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			.exam a:after {
+				display: inline-block;
+				content: ">";
+				font-weight: bold;
+				height: 0;
+				width: 205%;
+				transition: width .3s ease-in-out;
+			}
+			.exam a:hover:after,
+			.exam a:focus:after {
+				width: 220%;
+			}
+			.exam .am:hover {
+				color: green;
+			}
+			.exam .af:hover {
+				color: darkblue;
+			}
+			.exam .ad:hover {
+				color: #AA0033;
+			}
+			.exam .au:hover {
+				color: #EC2F00;
+			}
+			.exam .ao:hover {
+				color: #0F9000;
+			}
+			/******************/
+			/**********************************/
+			.inst {
+				line-height: 140%;
+			}
+			.inst img {
+				width: 700px;
+				display: block;
+				cursor: pointer;
+				margin: 10px;
+				display: inline-block;
+				position: relative;
+				z-index: 2;
+				overflow: hidden;
+				transition: 0.2s linear;
+			}
+			.inst img:focus {
+				position: fixed;
+				z-index: 10;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: auto;
+				height: auto;
+				max-width: 92%;
+				max-height: 92%;
+				margin: auto;
+				-webkit-box-shadow: 0 0 0 1000px rgba(0,0,0,.9);
+				box-shadow: 0 0 0 1000px rgba(0,0,0,0.9);
+			}
+			.inst img:focus ~ *{
+				cursor: pointer;
+			}
+			:not(:active) > .inst img:not(:hover) {
+				cursor: pointer;
+			}
+			.inst img:hover{
+				transform: scale(1.05);
+			}
+			.tran:hover {
+				transform: scale(1.1);
+			}
+			.inst a {
+				text-decoration: none; 
+				color: blue;
+				transition: 0.3s;
+			}
+			.inst a:hover {
+				color: gray;
+			}
+			.inline {
+				line-height: 50%;
+			}
+			.stepbutton1 {
+				position: fixed;
+				cursor: pointer;
+				bottom: 60%;
+				right: 5%;
+				overflow: hidden;
+				opacity: 0.5;
+				transition: 0.4s;
+			}
+			:hover {
+				opacity: 1;
+			}
+			.stepbutton2 {
+				position: fixed;
+				cursor: pointer;
+				bottom: 50%;
+				right: 5%;
+				overflow: hidden;
+				opacity: 0.5;
+				transition: 0.4s;		
+			}
+			:hover {
+				opacity: 1;
+			}
+			.stepbutton3 {
+				position: fixed;
+				cursor: pointer;
+				bottom: 40%;
+				right: 5%;
+				overflow: hidden;
+				opacity: 0.5;
+				transition: 0.4s;		
+			}
+			:hover {
+				opacity: 1;
+			}
+			#circle a {
+				width: 20px;
+				height: 20px;
+				-moz-border-radius: 60px;	
+				-webkit-border-radius: 60px;
+				border-radius: 60px;
+				border-style: solid;
+				border-color: #808080 transparent;
+			}
+			.topbutton {
+				width: 53px;
+				position: fixed;
+				cursor: pointer;
+				bottom: 20px;
+				right: 3.5%;
+				overflow: hidden;
+				opacity: 0.2;
+				transition: 0.5s;
+			}
+			.topbutton:hover {
+				opacity: 0.7;
+			}
+			/* Слайдер */
+			@keyframes slidy {
+				0% { left: 0%; }
+				20% { left: 0%; }
+				25% { left: -100%; }
+				45% { left: -100%; }
+				50% { left: -200%; }
+				70% { left: -200%; }
+				75% { left: -300%; }
+				95% { left: -300%; }
+				100% { left: -400%; }
+			}
+			body, 
+			figure { 
+			  margin: 0;
+			  font-weight: 100;
+			}
+			div#gallery { 
+			  width: 100%;
+			  overflow: hidden; 
+			}
+			figure.slider { 
+			  position: relative; 
+			  width: 500%;
+			  font-size: 0; 
+			  animation: 30s slidy infinite;
+			}
+			figure.slider figure { 
+			  width: 20%; 
+			  height: auto;
+			  display: inline-block;  
+			  position: inherit; 
+			}
+			figure.slider img { 
+				width: 100%; 
+				height: auto; 
+			}
+			figure.slider figure figcaption {
+			  position: absolute;
+			  left: 5%;
+			  bottom: 5%;
+			  background: rgba(0,0,0,0.6);
+			  width: 20%;
+			  font-size: 30px;
+			  padding: 10px;
+			}
+			/***********************************/
+			
+			/*Mobile media*/
+			@media (max-width: 720px){
+				body {
+					font-size: 15px;
+				}
+				.hr li {
+					padding: 5px;
+					display: block;
+					font-size: 15px;
+					float: none;
+					text-align:center;
+				}
+				.hr img {
+					height: 100px;
+				}
+				.hr li:nth-child(4){
+					float: none;
+				}
+				.hr li:first-child{
+					padding: 1px;
+				}
+				.topbutton {
+					opacity: 0.2;
+					width: 30px;
+					position: fixed;
+					cursor: pointer;
+					bottom: 20px;
+					right: 20px;
+				}
+				.topbutton:hover {
+					width: 30px;
+					opacity: 0.7;
+				}
+				.tran {
+					width: 60px;
+					height: 60px;
+					transition: 0.3s;
+				}
+				.tran2 {
+					width: 100px;
+					transition: 0.3s;
+				}
+				.distr-a {
+					font-size: 14px;
+				}
+				.di {
+					width: 100%;
+				}
+				.exam h1 {
+					font-size: 20px;
+				}
+				.exam h2 {
+					font-size: 18px;
+				}
+				.exam p {
+					font-size: 15px;
+				}
+				form .txt {
+					max-width: 120px;
+				}
+			}
+		/* form styles */
+			form .row {
+			display: block;
+			padding: 7px 8px;
+			margin-bottom: 7px;
+			}
+
+			form label {
+			display: inline-block;
+			font-size: 1.2em;
+			font-weight: bold;
+			width: 120px;
+			padding: 6px 0;
+			color: #464646;
+			vertical-align: top;
+			}
+
+			form input:focus, 
+			form textarea:focus { outline: none; }
+			::-webkit-input-placeholder { color: #aaafbd; font-style: italic; } /* WebKit */
+			:-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 4 to 18 */
+			::-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 19+ */
+			:-ms-input-placeholder { color: #aaafbd; font-style: italic; } /* Internet Explorer 10+ */
+
+			form .txt {
+			display: inline-block;
+			padding: 8px 9px;
+			padding-right: 30px;
+			width: 240px;
+			font-size: 1.35em;
+			font-weight: normal;
+			color: #898989;
+			}
+			.contc {
+				text-align: center;
+			}
