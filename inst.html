@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+		<meta name="description" content="Установка Linux">
+		<meta name="keywords" content="">
+		<meta name=viewport content="width=device-width, initial-scale=0.7">
+		<title>Linux install</title>
+		<link href="css/null.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+	</head>
+	<body>
+	<header>
+			<ul class="hr">
+				<li><a href="index.html" rel="home"><img src="img/logo2.png" alt="linuxbaza" width="70" height="70"></a></li>
+				<li><a href="info.html">О linux</a></li>
+				<li><a href="distr.html">Дистрибутивы</a></li>
+				<li><a href="inst.html">Установка</a></li>
+			</ul>
+	</header>
+			<div class="parent">
+				<div class="content">
+					<h1>Установка Linux</h1>
+					<br> <a id="1"></a>
+					<h3>Шаг 1: создание загрузочной флешки из ISO образа</h3>
+					<div class="content">
+						<div class="inst">
+							<p><strong>1)</strong> Находите ярлык программы UltraISO на рабочем столе, в установленных программах, нажав на кнопке “Пуск” или в папке с этой установленной программой и нажимайте на него правой кнопкой мыши. Найдите пункт “Запуск от имени администратора” и нажимайте на него.</p>
+							<p>Откроется главное окно программы <strong>UltraISO</strong>. Выглядит оно вот так:</p>
+							<p><img src="img/inst/1.png" alt="1" tabindex="0"></p>
+							<p><strong>2)</strong> Вам нужно иметь файл образа, сделанный в формате ISO или любом другом, понимаемым программой форматом, например, MDF, NRG и другими. Нажимайте на значёк, отмеченный на скриншоте ниже или открывайте “Файл -> Открыть…”. Выбранный образ будет загружен в рабочую зону программы.</p>
+							<p><img src="img/inst/2.png" alt="2" tabindex="0"></p>
+							<p><strong>3)</strong> Далее, следующим этапом создания загрузочной флешки будет запись образа на саму флешку. Нажимайте “Самозагрузка -> Записать образ Жесткого Диска…”.</p>
+							<p><img src="img/inst/3.png" alt="3" tabindex="0"></p>
+							<p><strong>4)</strong> Откроется окно записи образа. Графа “Disk Drive” должна содержать название вашей флешки и иметь её букву. Метод записи должен быть установлен в “USB-HDD+”. При правильной установке этих параметров можно нажимать кнопку ниже “Записать”.</p>
+							<p><img src="img/inst/4.png" alt="4" tabindex="0"></p>
+							<p><strong>5)</strong> Вас предупредят, что все данные на вашей флеш-накопителе будут стёрты и предложат либо продолжить, либо отложить этот процесс.</p>
+							<p><img src="img/inst/5.png" alt="5" tabindex="0"></p>
+							<p><strong>6)</strong> После завершения записи можете приступать к следующему шагу.</p>
+							<br>
+							<p>Скачать <a href="files/UltraISO.rar"><strong>UltraISO</strong></a></p>
+							<br>
+							<video width="480" height="300" controls="controls" poster="files/1.png">
+								<source src="files/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+								Видео не поддерживается вашим браузером<br><a href="files/1.mp4">Скачайте видео</a>.
+							</video>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div id="circle">
+				<a href="#1" title="Шаг 1" class="stepbutton1">1</a>
+				<a href="#2" title="Шаг 2" class="stepbutton2">2</a>
+				<a href="#3" title="Шаг 3" class="stepbutton3">3</a>
+			</div>
+			<a href="#" title="Вернуться к началу" class="topbutton"><img alt="Вверх" src="img/icon_top.png"></a><div id="FeedBack" class="mD">
+				<div>
+					<a href="#close" title="Закрыть" class="close">X</a>
+					<div class="exam">
+						<img alt="mint" src="img/mint/1.jpg">
+						<span>
+							<div id="w">
+							<h1>FeedBack</h1>
+							<form id="contactform" name="contact" method="post" action="#" class="contc">
+							<div class="row">
+							<input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Ваше Имя" required>
+							</div>
+
+							<div class="row">
+							<input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="E-mail Адрес" required>
+							</div>
+
+							<div class="row">
+							<input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="Тема" required>
+							</div>
+
+							<div class="row">
+							<textarea name="message" id="message" class="txtarea" tabindex="4" placeholder="Сообщение" rows="5" cols="40" required></textarea>
+							</div>
+
+							<div>
+							<input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="Отправить Сообщение">
+							</div>
+							</form>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+			<footer><a href="#FeedBack">Обратная связь </a><p>&copy; 2016 Корзинников Алексей - 329/2. Все права защищены :)</p></footer>
+	</body>
+</html>
